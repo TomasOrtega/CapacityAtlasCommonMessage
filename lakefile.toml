@@ -1,0 +1,25 @@
+name = "CapacityAtlasCommonMessage"
+version = "0.1.0"
+defaultTargets = ["CapacityAtlasCommonMessage", "capacity_common_message_audit"]
+
+[leanOptions]
+autoImplicit = false
+
+[[lean_lib]]
+name = "CapacityAtlasCommonMessage"
+
+[[lean_exe]]
+name = "capacity_common_message_audit"
+root = "CapacityAtlasCommonMessage.Audit"
+supportInterpreter = true
+
+[[require]]
+name = "CapacityAtlas"
+git = "https://github.com/TomasOrtega/CapacityAtlas.git"
+rev = "1f4b83da5f2bc05efba649054be18b1f6fd8da31"
+subDir = "lean"
+
+[[require]]
+name = "CapacityAtlasCompound"
+git = "https://github.com/TomasOrtega/CapacityAtlasCompound.git"
+rev = "1d5cbdc0a8cfb5d034facdb8d1e2473bb3c40ebe"
